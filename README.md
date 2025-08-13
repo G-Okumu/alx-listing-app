@@ -15,3 +15,15 @@ Define all TypeScript interfaces related to the project. Start by creating place
 
 ## constants/index.ts:
 Set up constants to store any reusable data or strings such as API URLs, configuration settings, or UI text
+
+# Setup Instructions
+1. Installing Dependencies
+
+```bash
+    npm i
+```
+
+2. Running the Project
+```bash
+    npm run dev
+```
