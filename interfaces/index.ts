@@ -1,5 +1,8 @@
-interface CardProps{
-
+interface CardProps {
+  image: string;
+  name: string;
+  price: number;
+  rating: number;
 }
 
 
