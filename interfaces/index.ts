@@ -10,7 +10,8 @@ interface ButtonProps{
     
 }
 
-interface PropertyProps {
+export interface PropertyProps {
+    id: number,
     name:string,
     address: {
         state:string,
@@ -25,6 +26,8 @@ interface PropertyProps {
         shower:string,
         occupants:string
     },
+    description: string,
     image:string,
-    discount:string
+    discount:string,
+    reviews: any[]
 }
