@@ -1,6 +1,9 @@
+import React from "react";
+
+import Link from "next/link";
 import Image from "next/image";
 
-import React from "react";
+import { PropertyProps } from "@/interfaces";
 
 interface Props {
   property: PropertyProps;
@@ -8,7 +11,7 @@ interface Props {
 
 const Card: React.FC<Props> = ({ property }) => {
   return (
-    <div className="rounded-lg overflow-hidden shadow-md bg-white">
+    <Link href={`/property/${property.id}`} className="rounded-lg overflow-hidden shadow-md bg-white">
       <Image
         src={property.image}
         alt={property.name}
@@ -21,7 +24,7 @@ const Card: React.FC<Props> = ({ property }) => {
         <p className="text-sm text-gray-600 mb-2">${property.price.toLocaleString()}</p>
         <p className="text-sm text-yellow-500">⭐ {property.rating.toFixed(2)}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
